@@ -1,0 +1,24 @@
+
+server:
+  port: 5000
+
+spring:
+  profiles:
+    active: default
+    group:
+      prod: production
+      test: test
+
+---
+
+spring:
+  profiles: production
+server:
+  port: 7070
+
+---
+
+spring:
+  profiles: test
+server:
+  port: 4000
